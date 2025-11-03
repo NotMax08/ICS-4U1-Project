@@ -8,7 +8,12 @@ import java.util.ArrayList;
  */
 public abstract class Tower extends SuperSmoothMover
 {
-    protected int damage;
+    protected int damage; //Damage of tower
+    protected ArrayList<Balloon> targets; //List of all targets within Tower's range
+    protected Balloon closestTarget; //Stores the closest target
+    protected int balloonAge;
+    protected int range; //Tower range
+    
     
     public Tower()
     {
@@ -18,6 +23,24 @@ public abstract class Tower extends SuperSmoothMover
     public void act()
     {
         // Add your action code here.
+    }
+    
+    public void getClosestTarget()
+    {
+        balloonAge = 0;
+        targets = (ArrayList<Balloon>)getObjectsInRange(range, Balloon.class);
+        
+        if(targets != null)
+        {
+            for (Balloon b: targets)
+            {
+                if(b.getActCount() > balloonAge)
+                {
+                    
+                }
+            }
+        }
+        
     }
     
     
