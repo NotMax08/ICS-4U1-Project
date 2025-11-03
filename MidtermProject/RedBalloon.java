@@ -1,13 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class RedBalloon here.
+ *  The most basic balloon type
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Robin Liu
+ * @version Nov 3
  */
 public class RedBalloon extends Balloon
 {
+    
     public RedBalloon(){
         HP = 1;
         speed = 4;
@@ -17,6 +18,7 @@ public class RedBalloon extends Balloon
     
     public void drawImage(){
         image = new GreenfootImage("RedBalloon.png");
+        image.scale(50, 60);
         setImage(image);
     }
     

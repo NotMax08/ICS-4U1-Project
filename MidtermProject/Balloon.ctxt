@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Balloon
-comment0.text=\n\ \ This\ is\ a\ superclass\ for\ the\ enemy\ which\ are\ balloons\n\ \ Balloons\ float\ across\ the\ path\ and\ try\ to\ reach\ the\ end\ of\ the\ path\n\ \ Balloons\ vary\ by\ colour,\ health,\ speed\n\ \n\ @author\ Robin\ Liu\ \n\ @version\ Nov\ 3\n
+comment0.text=\n\ \ This\ is\ a\ superclass\ for\ the\ enemy\ which\ are\ balloons\n\ \ Balloons\ float\ across\ the\ path\ and\ try\ to\ reach\ the\ end\ of\ the\ path\n\ \ Balloons\ vary\ by\ colour,\ health,\ speed,\ states\n\ \n\ @author\ Robin\ Liu\ \n\ @version\ Nov\ 3\n
 comment1.params=
 comment1.target=Balloon()
 comment2.params=
@@ -9,4 +9,10 @@ comment3.params=
 comment3.target=void\ move()
 comment4.params=
 comment4.target=int\ getActCount()
-numComments=5
+comment5.params=
+comment5.target=boolean\ isCamo()
+comment6.params=
+comment6.target=boolean\ isLead()
+comment7.params=
+comment7.target=void\ removeMe()
+numComments=8

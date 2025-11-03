@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=RedBalloon
-comment0.text=\n\ Write\ a\ description\ of\ class\ RedBalloon\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ \ The\ most\ basic\ balloon\ type\n\ \n\ @author\ Robin\ Liu\n\ @version\ Nov\ 3\n
 comment1.params=
 comment1.target=RedBalloon()
 comment2.params=
