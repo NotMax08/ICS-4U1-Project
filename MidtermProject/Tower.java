@@ -13,6 +13,7 @@ public abstract class Tower extends SuperSmoothMover
     protected Balloon closestTarget; //Stores the closest target
     protected int balloonAge;
     protected int range; //Tower range
+    protected GreenfootImage image;
     
     
     public Tower()
