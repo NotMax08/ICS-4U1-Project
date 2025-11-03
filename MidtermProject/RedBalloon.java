@@ -8,8 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class RedBalloon extends Balloon
 {
-    
-    
     public RedBalloon(){
         HP = 1;
         speed = 4;
@@ -25,7 +23,6 @@ public class RedBalloon extends Balloon
     public void act()
     {
         super.act();
-        
         
     }
     
