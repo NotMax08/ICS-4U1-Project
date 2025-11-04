@@ -23,7 +23,7 @@ public abstract class Tower extends SuperSmoothMover
     
     public void act()
     {
-        // Add your action code here.
+        
     }
     
     public void getClosestTarget()
@@ -38,11 +38,11 @@ public abstract class Tower extends SuperSmoothMover
                 if(b.getActCount() > greatestBalloonAge)
                 {
                     greatestBalloonAge = b.getActCount();
+                    closestTarget = b;
                 }
             }
         }
-        
     }
     
-    
+    public abstract void shoot();
 }
