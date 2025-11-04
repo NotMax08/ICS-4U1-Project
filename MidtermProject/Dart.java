@@ -12,6 +12,7 @@ public class Dart extends Projectiles
     {
         super();
         speed = 1;
+        damage = 1;
         
         // Create a small circular image
         GreenfootImage image = new GreenfootImage(10, 10); // width, height in pixels
