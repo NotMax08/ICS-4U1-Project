@@ -38,10 +38,12 @@ public abstract class Balloon extends SuperSmoothMover
         return actCount;
     }
     
+    /**
+     *  Methods to get the state of the ballooon
+     */
     public boolean isCamo(){
         return camo;
     }
-    
     public boolean isLead(){
         return lead;
     }

@@ -11,6 +11,7 @@ comment4.params=
 comment4.target=int\ getActCount()
 comment5.params=
 comment5.target=boolean\ isCamo()
+comment5.text=\n\ \ Methods\ to\ get\ the\ state\ of\ the\ ballooon\n
 comment6.params=
 comment6.target=boolean\ isLead()
 comment7.params=
