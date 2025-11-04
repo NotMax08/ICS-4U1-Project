@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=PathGenerator
+comment0.text=\n\ Path\ Generator\ Helper\ Class\ that\ helps\ generate\ the\ path\ with\ UI\ and\ points\n\ \n\ @author\ Max\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=pathPoints\ worldWidth\ worldHeight
+comment1.target=PathGenerator(java.util.ArrayList,\ int,\ int)
+comment2.params=
+comment2.target=void\ drawPathPoints()
+comment3.params=
+comment3.target=greenfoot.GreenfootImage\ getImage()
+comment4.params=radius\ x\ y\ image
+comment4.target=void\ drawCircleCentered(int,\ int,\ int,\ greenfoot.GreenfootImage)
+comment4.text=\n\ Draws\ a\ circle,\ centered\ for\ the\ parameter\ inputs,\ (x,y)\n\ created\ bc\ greenfoot\ draws\ it\ in\ upper\ left\ coordinate\ which\ is\ not\ good\n
+comment5.params=x1\ y1\ x2\ y2\ radius\ image
+comment5.target=void\ drawLineCentered(int,\ int,\ int,\ int,\ int,\ greenfoot.GreenfootImage)
+comment6.params=index
+comment6.target=Coordinate\ getPathPoint(int)
+comment7.params=
+comment7.target=java.util.ArrayList\ getPathArray()
+numComments=8
