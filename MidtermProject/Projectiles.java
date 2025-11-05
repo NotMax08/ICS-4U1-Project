@@ -22,8 +22,8 @@ public abstract class Projectiles extends SuperSmoothMover
     
     public Projectiles()
     {
-        startX = this.getX();
-        startY = this.getY();
+        //startX = this.getX();
+        //startY = this.getY();
     }
     
     public void act()
@@ -40,7 +40,7 @@ public abstract class Projectiles extends SuperSmoothMover
             Balloon b = (Balloon)getOneIntersectingObject(Balloon.class);
             if (b != null)
             {
-                
+                b.damageMe(damage);
             }
         }
     }
