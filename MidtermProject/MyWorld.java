@@ -22,6 +22,8 @@ public class MyWorld extends World
         
         background = new GreenfootImage (pathGenerator.getImage());
         setBackground(background);
+        
+        this.addObject(new SuperStatBar(100, 100, null, 300, 50, 0, Color.GREEN, Color.RED, false, Color.BLACK, 5), 300, 400);
     }
     public void act(){
         
