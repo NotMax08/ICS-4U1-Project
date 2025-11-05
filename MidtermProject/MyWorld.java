@@ -1,4 +1,5 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;  
+import java.util.*;
 
 /**
  * Write a description of class MyWorld here.
@@ -8,14 +9,36 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
-    /**
-     * Constructor for objects of class MyWorld.
-     * 
-     */
+    ArrayList<Coordinate> pathPoints = new ArrayList<>();
+    PathGenerator pathGenerator;
+    GreenfootImage background; 
+     
     public MyWorld()
-    {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+    {   
         super(600, 400, 1); 
+        addPathPoints();
+        pathGenerator = new PathGenerator(pathPoints, this.getWidth(), this.getWidth());
+        pathGenerator.drawPathPoints();
+        
+        background = new GreenfootImage (pathGenerator.getImage());
+        setBackground(background);
+        
+        Dart dart = new Dart();
+        addObject(dart, 100, 100);
+        
+        RedBalloon balloon = new RedBalloon();
+        addObject(balloon, 600, 100);
+    }
+    public void act(){
+        
+    }
+    
+    private void addPathPoints(){
+        pathPoints.add(new Coordinate(100, 100));
+        pathPoints.add(new Coordinate(200, 100));
+        pathPoints.add(new Coordinate(200, 200));
+        pathPoints.add(new Coordinate(200, 300));
+        pathPoints.add(new Coordinate(300, 300));
+        pathPoints.add(new Coordinate(400, 300));
     }
 }
