@@ -29,6 +29,7 @@ public abstract class Balloon extends SuperSmoothMover
     public Balloon(){
         enableStaticRotation();
         popImage.scale(50,50);
+        popped = false;
     }
 
     public void act(){
