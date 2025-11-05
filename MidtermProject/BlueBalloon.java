@@ -23,7 +23,7 @@ public class BlueBalloon extends Balloon
     
     public void drawImage(){
         image = new GreenfootImage("BlueBalloon.png");
-        image.scale(40,30);
+        image.scale(40,20);
         setImage(image);
     }
 }

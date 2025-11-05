@@ -12,6 +12,11 @@ public class MyWorld extends World
     ArrayList<Coordinate> pathPoints = new ArrayList<>();
     PathGenerator pathGenerator;
     GreenfootImage background; 
+    
+    protected static int maxHealth;
+    protected final Color healthColor = new Color(0, 128, 0);
+    protected final Color missingColor = new Color(210, 100, 102);
+    protected final Color borderColor = new Color(101, 67, 33);
      
     public MyWorld()
     {   
@@ -23,7 +28,7 @@ public class MyWorld extends World
         background = new GreenfootImage (pathGenerator.getImage());
         setBackground(background);
         
-        addObject(new SuperStatBar(100, 100, null, 300, 50, 0, Color.GREEN, Color.RED, false, Color.BLACK, 5), 300, 200);
+        addObject(new SuperStatBar(100, 100, null, 300, 20, 0, healthColor, missingColor, false, borderColor, 3), 425, 20);
     }
     public void act(){
         
