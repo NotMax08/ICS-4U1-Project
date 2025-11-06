@@ -9,27 +9,30 @@ import java.util.*;
  */
 public class MyWorld extends World
 {
-    ArrayList<Coordinate> pathPoints = new ArrayList<>();
-    PathGenerator pathGenerator;
-    GreenfootImage background; 
-    
+    private ArrayList<Coordinate> pathPoints = new ArrayList<>();
+    private PathGenerator pathGenerator;
+    private GreenfootImage background; 
+
+ 
     protected static int maxHealth;
     protected final Color healthColor = new Color(0, 128, 0);
     protected final Color missingColor = new Color(210, 100, 102);
     protected final Color borderColor = new Color(101, 67, 33);
+
      
     public MyWorld()
     {   
-        super(600, 400, 1); 
+        super(1200, 800, 1); 
+        
+
         addPathPoints();
-        pathGenerator = new PathGenerator(pathPoints, this.getWidth(), this.getWidth());
-        pathGenerator.drawPathPoints();
-        
-        background = new GreenfootImage (pathGenerator.getImage());
-        setBackground(background);
-        
+    
+        addObject(new PathGenerator(pathPoints, this.getWidth(), this.getHeight()), getWidth() / 2, getHeight() / 2);
+       
         addObject(new SuperStatBar(100, 100, null, 300, 20, 0, healthColor, missingColor, false, borderColor, 3), 425, 20);
+
     }
+    
     public void act(){
         
     }
@@ -38,8 +41,17 @@ public class MyWorld extends World
         pathPoints.add(new Coordinate(100, 100));
         pathPoints.add(new Coordinate(200, 100));
         pathPoints.add(new Coordinate(200, 200));
-        pathPoints.add(new Coordinate(200, 300));
-        pathPoints.add(new Coordinate(300, 300));
-        pathPoints.add(new Coordinate(400, 300));
+        pathPoints.add(new Coordinate(400, 200));
+        pathPoints.add(new Coordinate(500, 200));
+        pathPoints.add(new Coordinate(500, 400));
+        pathPoints.add(new Coordinate(700, 400));
+        pathPoints.add(new Coordinate(700, 500));
+        pathPoints.add(new Coordinate(700, 600));
+        pathPoints.add(new Coordinate(600, 600));
+        pathPoints.add(new Coordinate(500, 600));
+        pathPoints.add(new Coordinate(500, 700));
+        //pathPoints.add(new Coordinate(500, 700));
     }
 }
+
+

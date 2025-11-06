@@ -21,6 +21,8 @@ public abstract class Balloon extends SuperSmoothMover
     protected static GreenfootImage popImage = new GreenfootImage("popImage.png");
     protected boolean popped;
     protected int actCount; //counts how long the balloon has lived
+    protected final int IMAGE_WIDTH = 20;
+    protected final int IMAGE_HEIGHT = 30;
 
     // special balloon states 
     protected boolean camo; 
@@ -82,6 +84,10 @@ public abstract class Balloon extends SuperSmoothMover
 
     public void popMe(){
         setImage(popImage);
+    }
+    
+    public boolean isPopped(){
+        return popped;
     }
 
 }
