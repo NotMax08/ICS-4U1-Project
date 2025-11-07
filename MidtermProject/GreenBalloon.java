@@ -13,7 +13,7 @@ public class GreenBalloon extends Balloon
     public GreenBalloon(){
         HP = 5;
         speed = 5;
-        weightValue = 3;
+        weightValue = 4;
         drawImage();
     }
     

@@ -18,11 +18,11 @@ public abstract class Balloon extends SuperSmoothMover
     protected double speed; 
     protected int weightValue; //how heavy the balloon is ?
     protected GreenfootImage image;
-    protected static GreenfootImage popImage = new GreenfootImage("popImage.png");
+    protected final static GreenfootImage popImage = new GreenfootImage("popImage.png");
     protected boolean popped;
     protected int actCount; //counts how long the balloon has lived
-    protected final int IMAGE_WIDTH = 20;
-    protected final int IMAGE_HEIGHT = 30;
+    protected final int IMAGE_WIDTH = 40;
+    protected final int IMAGE_HEIGHT = 60;
 
     // special balloon states 
     protected boolean camo; 
@@ -48,7 +48,8 @@ public abstract class Balloon extends SuperSmoothMover
     }
 
     public void move(){
-        move(speed);
+        
+        //move(speed);
     }
 
     public int getActCount(){
